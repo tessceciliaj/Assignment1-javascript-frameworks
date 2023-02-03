@@ -9,6 +9,7 @@ const sideLength = "200px";
 const articles = [
   {
     id: 1,
+    className: "first",
     title: "About Me",
     subheading: "👋Hi im Therese, a Frontend developer student.",
     picture: meBW,
@@ -16,6 +17,7 @@ const articles = [
   },
   {
     id: 2,
+    className: "second",
     title: "My peachy Idea",
     subheading: "I would like to create a miniature story page with react.",
     picture: aiArt,
@@ -23,6 +25,7 @@ const articles = [
   },
   {
     id: 3,
+    className: "third",
     title: "My luminous design",
     subheading: "To give myself a challenge, I will create multiple light designs.",
     picture: hourglass,
@@ -48,7 +51,7 @@ function App() {
         <div>
           {articles.map(article => (
             <div key={article.id}>
-              <article>
+              <article className={article.className}>
               <h2>{article.title}</h2>
               <p className='subHeading'>{article.subheading}</p>
               <div className='container'>
@@ -60,8 +63,8 @@ function App() {
           ))}
         </div>
       ) : (
-        <div className={articles.id}>
-          <article>
+        <div >
+          <article className={articles[currentArticle].className}>
           <h2>{articles[currentArticle].title}</h2>
           <p className='subHeading'>{articles[currentArticle].subheading}</p>
           <div className='container'>

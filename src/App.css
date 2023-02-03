@@ -81,17 +81,16 @@ article {
   display: flex;
 }
 
-.first {
-  background-color: aqua;
-}
-
 @media screen and (max-width: 768px) {
-  .container {
-    flex-direction: column;
-  }
-
   button {
     width: 44%;
   }
   
+  .container {
+    flex-direction: column;
+  }
+
+  .third img {
+    width: 150px;
+  }
 }
