@@ -55,27 +55,29 @@ function App() {
               <h2>{article.title}</h2>
               <p className='subHeading'>{article.subheading}</p>
               <div className='container'>
-              <img src={article.picture} alt="" height={sideLength} width={sideLength} />
-              <p>{article.content}</p>
+                <img src={article.picture} alt="" height={sideLength} width={sideLength} />
+                <p>{article.content}</p>
               </div>
               </article>
-            </div>
-          ))}
         </div>
+      ))}
+    </div>
       ) : (
-        <div >
+        <div>
           <article className={articles[currentArticle].className}>
-          <h2>{articles[currentArticle].title}</h2>
-          <p className='subHeading'>{articles[currentArticle].subheading}</p>
-          <div className='container'>
-          <img src={articles[currentArticle].picture} alt="" height={sideLength} width={sideLength} />
-          <p>{articles[currentArticle].content}</p>
-          </div>
+            <h2>{articles[currentArticle].title}</h2>
+            <p className='subHeading'>{articles[currentArticle].subheading}</p>
+            <div className='container'>
+              <img src={articles[currentArticle].picture} alt="" height={sideLength} width={sideLength} />
+              <p>{articles[currentArticle].content}</p>
+            </div>
           </article>
         </div>
       )}
-      <button onClick={handleToggleDisplay}>Toggle Display</button>
-      <button onClick={handleSwitchArticle}>Switch Article</button>
+      <div className={articles[currentArticle].className}>
+        <button onClick={handleToggleDisplay} >Toggle Display</button>
+        <button onClick={handleSwitchArticle}>Switch Article</button>
+      </div>
     </div>
   );
 }

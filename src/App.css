@@ -70,6 +70,16 @@ article {
 
 }
 
+.second button {
+  background-color: var(--accent-color);
+  color: var(--light-color);
+}
+
+.third button {
+  background-color: var(--color-opacity);
+  color: var(--medium-color);
+}
+
 .subHeading {
   color: var(--medium-color);
   margin: 0;
