@@ -75,9 +75,17 @@ article {
   color: var(--light-color);
 }
 
+.second button:hover {
+  box-shadow: 0 0 5px 0 var(--medium-color);
+}
+
 .third button {
   background-color: var(--color-opacity);
-  color: var(--medium-color);
+  color: var(--dark-color);
+}
+
+.third button:hover {
+  box-shadow: 0 0 5px 0 var(--medium-color);
 }
 
 .subHeading {

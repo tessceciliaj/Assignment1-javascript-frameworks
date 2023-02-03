@@ -75,7 +75,7 @@ function App() {
         </div>
       )}
       <div className={articles[currentArticle].className}>
-        <button onClick={handleToggleDisplay} >Toggle Display</button>
+        <button onClick={handleToggleDisplay}>Toggle Display</button>
         <button onClick={handleSwitchArticle}>Switch Article</button>
       </div>
     </div>
