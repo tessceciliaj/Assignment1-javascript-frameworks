@@ -1,0 +1,97 @@
+:root {
+  --accent-color: rgba(244,158,126);
+  --color-opacity: rgba(244, 158, 126, 0.08);
+  --dark-color: #0d0c0f;
+  --light-color: rgb(245, 245, 244);
+  --medium-color: rgb(104, 93, 93);
+  background-color: var(--color-opacity);
+  color: var(--dark-color);
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  font-family: 'Libre Caslon Text', serif;
+  font-size: 14px;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+button,
+h1 {
+  font-family: 'Didact Gothic', sans-serif;
+  text-transform: uppercase;
+  transition: 1s;
+}
+
+h2 {
+  color: var(--accent-color);
+  font-size: 28px;
+  letter-spacing: 1px;
+  margin: 1em 0 8px;
+}
+
+button {
+  background-color: var(--light-color);
+  border-radius: 8px;
+  border: 1px solid var(--accent-color);
+  color: var(--accent-color);
+  cursor: pointer;
+  font-size: 0.9em;
+  margin: 8px 9px 0;
+  padding: 0.6em;
+  transition: 0.5s;
+  width: 47%;
+}
+
+button:hover {
+  color: var(--accent-color);
+  background-color: var(--light-color);
+  box-shadow: 0 0 5px 0 var(--accent-color);
+}
+
+article {
+  background-color: var(--light-color);
+  border: 1px solid var(--accent-color);
+  border-radius: 20px;
+  margin-bottom: 8px;
+  max-width: 600px;
+  padding: 0.6em 1.2em;
+
+}
+
+.subHeading {
+  color: var(--medium-color);
+  margin: 0;
+  font-size: 16px;
+}
+
+.container {
+  align-items: center;
+  display: flex;
+}
+
+.first {
+  background-color: aqua;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  button {
+    width: 44%;
+  }
+  
+}
