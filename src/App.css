@@ -88,6 +88,11 @@ article {
   box-shadow: 0 0 5px 0 var(--medium-color);
 }
 
+.third img {
+margin: 16px auto;
+width: 400px;
+}
+
 .subHeading {
   color: var(--medium-color);
   margin: 0;
@@ -97,6 +102,10 @@ article {
 .container {
   align-items: center;
   display: flex;
+}
+
+div .third .container{
+ flex-direction: column;
 }
 
 @media screen and (max-width: 768px) {

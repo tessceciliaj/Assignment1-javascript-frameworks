@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import './App.css'
 import meBW from "./assets/meBW.png"
 import aiArt from "./assets/flwrpckr.png"
-import hourglass from "./assets/hrglss.png"
+import hourglass from "./assets/myDesign.png"
 
 const sideLength = "200px";
 
@@ -21,15 +21,15 @@ const articles = [
     title: "My peachy Idea",
     subheading: "I would like to create a miniature story page with react.",
     picture: aiArt,
-    content: "I love to play around with creative tools, where my favourite tool is my mind. So for my project I would like to create a page where there are several miniature stories, to each story there will be three images on display. My goal is to display one story at the time, and every story have an unique design to it."
+    content: "I love to play around with creative tools, where my favourite tool is my imagination. So for my project I would like to create a page where there are several miniature stories. To each story there will be three images on display, a title and buttons. My goal is to display one story at the time and make it feel playfull."
   },
   {
     id: 3,
     className: "third",
     title: "My luminous design",
-    subheading: "To give myself a challenge, I will create multiple light designs.",
+    subheading: " I will create a light and playfull design. Focus on pseudo-class hover.",
     picture: hourglass,
-    content: "All of my earlier projects contains a dark design, see https://lunagrace.tech/ for example. And now I want to challenge myself to produce light but colorful layouts. With the hourglass to the left as the main thing on my moodboard. Light, luminous colors, with a glazed feeling. In my miniture story libary i want a common-thread between the designs, but every story will have its unique palette. "
+    content: "All of my earlier projects contains a dark design, see https://lunagrace.tech/ for example. And now I want to produce a light and playful layout. I want the pictures on display to have different hover-effects, so there is where my main focus will be. Gradient buttons. Playful and bubbly feeling to it."
   }
 ];
 
@@ -55,7 +55,7 @@ function App() {
               <h2>{article.title}</h2>
               <p className='subHeading'>{article.subheading}</p>
               <div className='container'>
-                <img src={article.picture} alt="" height={sideLength} width={sideLength} />
+                <img src={article.picture} alt="" width={sideLength} />
                 <p>{article.content}</p>
               </div>
               </article>
@@ -68,7 +68,7 @@ function App() {
             <h2>{articles[currentArticle].title}</h2>
             <p className='subHeading'>{articles[currentArticle].subheading}</p>
             <div className='container'>
-              <img src={articles[currentArticle].picture} alt="" height={sideLength} width={sideLength} />
+              <img src={articles[currentArticle].picture} alt="" width={sideLength} />
               <p>{articles[currentArticle].content}</p>
             </div>
           </article>
