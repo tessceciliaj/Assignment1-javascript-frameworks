@@ -27,9 +27,9 @@ const articles = [
     id: 3,
     className: "third",
     title: "My luminous design",
-    subheading: " I will create a light and playfull design. Focus on pseudo-class hover.",
+    subheading: "A light & bubbly design by me.",
     picture: hourglass,
-    content: "All of my earlier projects contains a dark design, see https://lunagrace.tech/ for example. And now I want to produce a light and playful layout. I want the pictures on display to have different hover-effects, so there is where my main focus will be. Gradient buttons. Playful and bubbly feeling to it."
+    content: "All of my earlier projects contains a dark design, see https://lunagrace.tech/ for example. And now I want to produce a light and playful layout. Gradient buttons. Playful and bubbly feeling to it."
   }
 ];
 
